@@ -16,4 +16,9 @@ public class AdruinoController {
     public ResponseEntity<Integer> turnOffLight(){
         return ResponseEntity.ok(0);
     }
+
+    @GetMapping("/")
+    public ResponseEntity<Integer> start(){
+        return ResponseEntity.ok(1);
+    }
 }
